@@ -7,7 +7,7 @@ I coded this for a hardware project of mine. This was originally made using Pyth
 - Updated every 5 minutes.
 - Data is pulled from the CoinGecko API (*No API key needed!*)
 
-—
+---
 
 ## How to use:
 *This tutorial will assume you are on Debian (or Debian based) Linux. The binary should work fine on other platforms but Debian is very stable and common for servers so we will only cover that here.*
@@ -24,7 +24,7 @@ sudo apt install screen
  
 4. Congrats, your server is up and running! If you want to have a secure connection with your server, look into setting up [Caddy](https://caddyserver.com) as a reverse proxy. You will likely be fine if your server is running at home but if you are using a remote server or want to access your server over HTTPS remotely you should use Caddy.
 
-—
+---
 
 ## Build guide
 
@@ -32,7 +32,7 @@ sudo apt install screen
 - Go
 - Make
 
-—
+#
 
 ### How to build from source:
 1. Start by downloading the source code. You should download the code from the latest release on the releases page so you know the executable will work the same as the prebuilt binary. You can find the latest release [here](https://github.com/Tyguy047/Desktop-Ticker-Backend/releases/latest). Copy the download link to the source code for the latest release and use `wget` to download it directly on your server.
@@ -43,10 +43,12 @@ sudo apt install screen
   
 4. Using the `Makefile` will put the binaries in the `bin` folder. You can now move your binary out of there or run it directly from there.
 
-—
+---
 
 # About The Dev:
 To see more of my projects follow me on GitHub or check out my websites to read my tech blog posts:
 
 - [https://tylercaselli.com](https://tylercaselli.com)
 - [https://tyguy047.dev](https://tyguy047.dev)
+
+---
