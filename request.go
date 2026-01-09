@@ -9,12 +9,7 @@ import (
 )
 func fetchMoneroPrice() string {
 
-	// "http://localhost:5500" is for tesing while in school since the Wi-Fi blocks the actual API endpoint.
-	// When not in school or when building for prod, it is important to change "http://localhost:5500" to "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd".
-	// Remember to comment out or delete the line that calls "http://localhost:5500".
-
 	resp, err := http.Get("https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd")
-	// resp, err := http.Get("http://localhost:5500")
 	if err != nil {
 		fmt.Println("Error fetching price:", err)
 		return CURRENT_PRICE
