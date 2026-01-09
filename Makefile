@@ -19,7 +19,7 @@ build: amd64 mac pi5
 	@echo "All binaries built in $(BIN_DIR)/"
 
 # ----------------------------------
-# Individual builds
+# Individual platform builds
 # ----------------------------------
 amd64:
 	@echo "Building $(BINARY_NAME) for Linux AMD64..."
@@ -47,23 +47,7 @@ clean:
 	rm -rf $(BIN_DIR)
 	@echo "Done."
 
-# Individual clean targets
-clean-amd64:
-	@echo "Cleaning AMD64 binary..."
-	rm -f $(BIN_DIR)/$(BINARY_NAME)-amd64
-	@echo "Done."
-
-clean-mac:
-	@echo "Cleaning Mac binary..."
-	rm -f $(BIN_DIR)/$(BINARY_NAME)-mac
-	@echo "Done."
-
-clean-pi5:
-	@echo "Cleaning Pi5 binary..."
-	rm -f $(BIN_DIR)/$(BINARY_NAME)-pi5
-	@echo "Done."
-
 # ----------------------------------
 # Phony targets
 # ----------------------------------
-.PHONY: all build amd64 mac pi5 clean clean-amd64 clean-mac clean-pi5
+.PHONY: all build amd64 mac pi5 clean
