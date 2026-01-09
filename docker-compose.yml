@@ -1,0 +1,7 @@
+services:
+  desktop-ticker-backend:
+    build: .
+    container_name: desktop-ticker-backend
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
